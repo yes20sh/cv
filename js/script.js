@@ -12,7 +12,7 @@ const goToNextSlide = () => {
     if (slideIndex < totalProjects - 1) {
         slideIndex++;
     } else {
-        slideIndex = 0;
+        slideIndex = 0; // Cycle back to the first project
     }
     slider.style.transition = "transform 0.5s ease-in-out";
     slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
@@ -22,7 +22,7 @@ const goToPrevSlide = () => {
     if (slideIndex > 0) {
         slideIndex--;
     } else {
-        slideIndex = totalProjects - 1;
+        slideIndex = totalProjects - 1; // Cycle back to the last project
     }
     slider.style.transition = "transform 0.5s ease-in-out";
     slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
@@ -31,9 +31,8 @@ const goToPrevSlide = () => {
 nextButton.addEventListener("click", goToNextSlide);
 prevButton.addEventListener("click", goToPrevSlide);
 
-// Auto swap one container every 2 seconds
-setInterval(goToNextSlide, 20000);
 
+setInterval(goToNextSlide, 2000);  
 
 
 // Mourse
