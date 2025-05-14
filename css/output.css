@@ -1497,6 +1497,10 @@ video {
   .sm\:max-w-\[700px\] {
     max-width: 700px;
   }
+
+  .sm\:max-w-\[750px\] {
+    max-width: 750px;
+  }
 }
 
 @media (min-width: 768px) {
