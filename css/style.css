@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overscroll-behavior: none;
+    background: radial-gradient(circle, rgba(10, 10, 10, 0.8) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+body {
+    cursor: default;
+}
+
+* {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.stardust {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: sparkle 1.5s forwards;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0) translateY(-30px);
+        opacity: 0;
+    }
+}
