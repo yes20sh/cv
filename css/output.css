@@ -1012,8 +1012,8 @@ video {
     margin-left: 1.25rem;
   }
 
-  .max-sm\:p-3 {
-    padding: 0.75rem;
+  .max-sm\:p-0 {
+    padding: 0px;
   }
 }
 
